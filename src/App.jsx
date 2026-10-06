@@ -46,7 +46,7 @@ function App() {
   return (
     <div className='App'>
       <div className='Header'>
-        Calculator of Gerneth Canilao - DA3A
+        Calculator of Gerneth Canilao - IT3A
       </div>
       <div className='Calculator'>
         <CalcDisplay dispValue= {dispValue} />  
