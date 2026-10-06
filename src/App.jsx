@@ -18,20 +18,21 @@ function CalcButton({ label, buttonClassName = "CalcButton", onClick }) {
 }
 
 function App() {
-
+  // Nagse-set lang sa screen kung anong button label ang pinindot
   const [disp, setDisp] = useState('0');
 
   const handleButtonClick = (label) => {
-    setDisp(label); 
+    setDisp(label); // Ipapakita lang ang mismong button na na-click
+  }
 
   return (
     <div className='App'>
-      
+      {/* Requirement 1: Header */}
       <div className='Header'>
         Calculator of Gerneth Canilao - IT3A
       </div>
 
-      
+      {/* Requirement 2: Personalized Layout */}
       <div className='Calculator'>
         <CalcDisplay dispValue={disp} />
         
